@@ -1,1 +1,4 @@
 theme: jekyll-theme-dinky
+title: Data Generator
+description: A tool for generating fake personalised data. All choices are stored within your browser.
+show_downloads: false

@@ -1,0 +1,1 @@
+document.getElementById("testBtn").onclick = function () { alert('hello!'); };

@@ -107,8 +107,10 @@ div#places-column {
     width: 90%;
     margin-right: 10%;
 }
-
+h3 {
+    margin-top:0px;
+}
 section {
-    width:76% !important;
-    padding:2%;
+    width:75% !important;
+    padding:1%;
 }

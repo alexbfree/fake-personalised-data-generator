@@ -31,6 +31,7 @@
           <option data-type="professional" value="boss">Boss</option>
           <option data-type="romantic" data-gender="male" value="boyfriend">Boyfriend</option>
           <option data-type="family" data-gender="male" value="brother">Brother</option>
+          <option data-type="family" data-gender="male" value="brother-in-law">Brother-in-law</option>
           <option data-type="family" value="child">Child</option>
           <option data-type="professional" value="client">Client</option>
           <option data-type="professional" value="clergyman">Clergyman/Clergywoman</option>
@@ -40,6 +41,7 @@
           <option data-type="social" value="crush">Crush</option>
           <option data-type="professional" value="coworker">Co-worker/Colleague</option>
           <option data-type="professional" value="customer">Customer</option>
+          <option data-type="romantic" value="date">Date</option>
           <option data-type="professional" value="doctor">Doctor</option>
           <option data-type="family" data-gender="female" value="daughter">Daughter</option>
           <option data-type="professional" value="driver">Driver</option>
@@ -49,9 +51,11 @@
           <option data-type="social" value="enemy">Enemy</option>
           <option data-type="romantic" value="ex">Ex</option>
           <option data-type="social" value="facebook-friend">Facebook friend / online friend</option>
+          <option data-type="romantic" value="friend-with-benefits">Friend with benefits</option>
           <option data-type="family" value="family-member">Family member</option>
           <option data-type="family" value="family-friend">Family friend</option>
           <option data-type="family" data-gender="male" value="father">Father</option>
+          <option data-type="family" data-gender="male" value="father-in-law">Father-in-law</option>
           <option data-type="social" value="friend">Friend</option>
           <option data-type="romantic" data-gender="female" value="girlfriend">Girlfriend</option>
           <option data-type="family" value="grandchild">Grandchild</option>
@@ -67,12 +71,14 @@
           <option data-type="family" data-gender="female" value="half-brother">Half-Sister</option>
           <option data-type="professional" value="handyman">Handyman / Handywoman</option>
           <option data-type="romantic" data-gender="male" value="husband">Husband</option>
+          <option data-type="family" value="in-law">In-law relative</option>
           <option data-type="romantic" value="involved">Involved / Entwined</option>
           <option data-type="romantic" value="is-complicated">It's complicated</option>
           <option data-type="professional" value="lawyer">Lawyer</option>
           <option data-type="professional" value="lecturer">Lecturer</option>
           <option data-type="romantic" value="lover">Lover</option>
           <option data-type="family" data-gender="female" value="mother">Mother</option>
+          <option data-type="family" data-gender="female" value="mother-in-law">Mother-in-law</option>
           <option data-type="professional" value="mentee">Mentee</option>
           <option data-type="professional" value="mentor">Mentor</option>
           <option data-type="family" data-gender="male" value="nephew">Nephew</option>
@@ -87,13 +93,16 @@
           <option data-type="professional" value="representative">Representative</option>
           <option data-type="family" value="sibling">Sibling</option>
           <option data-type="family" data-gender="female" value="sister">Sister</option>
+          <option data-type="family" data-gender="female" value="sister-in-law">Sister-in-law</option>
           <option data-type="romantic" value="spouse">Spouse</option>    
           <option data-type="social" value="support-buddy">Support Buddy</option>    
           <option data-type="family" data-gender="male" value="son">Son</option>
           <option data-type="family" data-gender="male" value="stepsister">Stepbrother</option>
+          <option data-type="family" data-gender="female" value="stepdaughter">Stepdaughter</option>
           <option data-type="family" data-gender="male" value="stepfather">Stepfather</option>
           <option data-type="family" data-gender="female" value="stepmother">Stepmother</option>
           <option data-type="family" data-gender="female" value="stepsister">Stepsister</option>
+          <option data-type="family" data-gender="male" value="stepson">Stepson</option>
           <option data-type="professional" value="student">Student</option>
           <option data-type="professional" value="supervisee">Supervisee</option>
           <option data-type="professional" value="supervisor">Supervisor</option>

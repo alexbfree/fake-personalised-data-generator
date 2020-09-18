@@ -2,12 +2,14 @@
 
 let get_people = function() {
     let storedPeople = localStorage.getItem('people');
+    let people = [];
     if (storedPeople) {
-        return JSON.parse(storedPeople);
+        people = JSON.parse(storedPeople);
+        people.sort( compare_people );
     } else {
         localStorage.setItem('people',JSON.stringify([]));
-        return [];
     }
+    return people;
 }
 
 let store_new_person = function(name,relationship,relationship_type,gender,active) {
@@ -58,16 +60,35 @@ let edit_person = function(oldName,newName,relationship,relationship_type,gender
     }
 }
 
+let get_display_relationship = function(active,relationship) {
+    let return_string = ""
+    return_string += relationship.replace(/-/g, ' ');
+    if (active=="past") {
+        return_string += " (past)";
+    }
+    return return_string;
+}
+
 let update_people_display = function() {
     let people = get_people();
     let list = document.querySelector("#people-column ul");
     list.innerHTML="";
     for (let p of people) {
-        list.insertAdjacentHTML("afterbegin", `<li>${p.name} (${p.relationship}) <button data-name="${p.name}" class="delete-person">Delete</button></li>`);
+        list.insertAdjacentHTML("afterbegin", `<li>${p.name} (${get_display_relationship(p.active,p.relationship)}) <button data-name="${p.name}" class="delete-person">Delete</button></li>`);
     }
     bind_delete_person_buttons();
 }
 
+
+let compare_people = function( a, b ) {
+    if ( a.name > b.name ){
+        return -1;
+    }
+    if ( a.name < b.name ){
+        return 1;
+    }
+    return 0;
+}
 
 window.addEventListener('load', function () {
     let add_buttons = document.querySelectorAll(".add-button");

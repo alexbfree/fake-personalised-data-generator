@@ -29,9 +29,6 @@ div.info-column {
     min-height:200px;
 }
 
-h4 {
-    margin-top:0px;
-}
 
 .break {
     flex-basis: 100%;
@@ -91,7 +88,7 @@ div#yourself-home-column {
     background-color:#ddffdd;
 }
 
-div#brands-causes-column {
+div#causes-column {
     background-color:#ffffdd;
 }
 
@@ -107,7 +104,7 @@ div#places-column {
     width: 90%;
     margin-right: 10%;
 }
-h3 {
+h1,h2,h3,h4,h5,h6 {
     margin-top:0px;
 }
 section {

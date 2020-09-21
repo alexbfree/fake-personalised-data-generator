@@ -10,7 +10,7 @@
 </div>
 <div id="places-column" class="info-column"><h4>Places in your life</h4><ul></ul><button id="add-place" class="add-button" data-modal="places-modal">Add Place</button>
 </div>
-<div id="brands-causes-column" class="info-column"><h4>Your brands & causes</h4><ul></ul><button id="add-causes" class="add-button" data-modal="causes-modal">Add Brand/Cause</button></div>
+<div id="causes-column" class="info-column"><h4>Your brands & causes</h4><ul></ul><button id="add-causes-channel" class="add-button" data-modal="causes-channel-modal">Add a TV Channel/Platform</button></div>
 </div>
 <div id="person-modal" class="modal">
   <div class="modal-content">
@@ -25,96 +25,96 @@
       <label for="person-relationship">Relationship: </label>
       <input required list="relationship-options" name="person-relationship" placeholder="Enter relationship or click to select from list..." style="width:22em;">
       <datalist id="relationship-options">
-          <option data-type="professional" value="accountant">Accountant</option>
-          <option data-type="romantic" value="admirer">Admirer</option>
-          <option data-type="professional" value="advisee">Advisee</option>
-          <option data-type="professional" value="advisor">Advisor</option>
-          <option data-type="professional" value="agent">Agent</option>
-          <option data-type="professional" value="assistant">Assistant / PA</option>
-          <option data-type="family" data-gender="female" value="aunt">Aunt</option>
+          <option data-type="professional" value="Accountant">Accountant</option>
+          <option data-type="romantic" value="Admirer">Admirer</option>
+          <option data-type="professional" value="Advisee">Advisee</option>
+          <option data-type="professional" value="Advisor">Advisor</option>
+          <option data-type="professional" value="Agent">Agent</option>
+          <option data-type="professional" value="Assistant">Assistant / PA</option>
+          <option data-type="family" data-gender="female" value="Aunt">Aunt</option>
           <option data-type="professional" value="boss">Boss</option>
-          <option data-type="romantic" data-gender="male" value="boyfriend">Boyfriend</option>
-          <option data-type="family" data-gender="male" value="brother">Brother</option>
-          <option data-type="family" data-gender="male" value="brother-in-law">Brother-in-law</option>
-          <option data-type="family" value="child">Child</option>
-          <option data-type="professional" value="client">Client</option>
-          <option data-type="professional" value="clergyman">Clergyman/Clergywoman</option>
-          <option data-type="social" value="close-friend">Close Friend</option>
-          <option data-type="professional" value="contractor">Contractor</option>
-          <option data-type="family" value="cousin">Cousin</option>
-          <option data-type="social" value="crush">Crush</option>
-          <option data-type="professional" value="coworker">Co-worker/Colleague</option>
-          <option data-type="professional" value="customer">Customer</option>
-          <option data-type="romantic" value="date">Date</option>
-          <option data-type="professional" value="doctor">Doctor</option>
-          <option data-type="family" data-gender="female" value="daughter">Daughter</option>
-          <option data-type="professional" value="driver">Driver</option>
-          <option data-type="professional" value="electrician">Electrician</option>
-          <option data-type="professional" value="employee">Employee</option>
-          <option data-type="professional" value="employer">Employer</option>
+          <option data-type="romantic" data-gender="male" value="Boyfriend">Boyfriend</option>
+          <option data-type="family" data-gender="male" value="Brother">Brother</option>
+          <option data-type="family" data-gender="male" value="Brother-in-law">Brother-in-law</option>
+          <option data-type="family" value="Child">Child</option>
+          <option data-type="professional" value="Client">Client</option>
+          <option data-type="professional" value="Clergyman">Clergyman/Clergywoman</option>
+          <option data-type="social" value="Close friend">Close friend</option>
+          <option data-type="professional" value="Contractor">Contractor</option>
+          <option data-type="family" value="Cousin">Cousin</option>
+          <option data-type="social" value="Crush">Crush</option>
+          <option data-type="professional" value="Co-worker/Colleague">Co-worker/Colleague</option>
+          <option data-type="professional" value="Customer">Customer</option>
+          <option data-type="romantic" value="Date">Date</option>
+          <option data-type="professional" value="Doctor">Doctor</option>
+          <option data-type="family" data-gender="female" value="Daughter">Daughter</option>
+          <option data-type="professional" value="Driver">Driver</option>
+          <option data-type="professional" value="Electrician">Electrician</option>
+          <option data-type="professional" value="Employee">Employee</option>
+          <option data-type="professional" value="Employer">Employer</option>
           <option data-type="social" value="enemy">Enemy</option>
           <option data-type="romantic" value="ex">Ex</option>
-          <option data-type="social" value="facebook-friend">Facebook friend / online friend</option>
-          <option data-type="romantic" value="friend-with-benefits">Friend with benefits</option>
-          <option data-type="family" value="family-member">Family member</option>
-          <option data-type="family" value="family-friend">Family friend</option>
-          <option data-type="family" data-gender="male" value="father">Father</option>
-          <option data-type="family" data-gender="male" value="father-in-law">Father-in-law</option>
-          <option data-type="social" value="friend">Friend</option>
-          <option data-type="romantic" data-gender="female" value="girlfriend">Girlfriend</option>
-          <option data-type="family" value="grandchild">Grandchild</option>
-          <option data-type="family" value="grandparent">Grandparent</option>
-          <option data-type="family" data-gender="female" value="great-aunt">Great-aunt</option>
-          <option data-type="family" data-gender="male" value="great-grandfather">Great-grandfather</option>
-          <option data-type="family" data-gender="female" value="great-grandmother">Great-grandfather</option>
+          <option data-type="social" value="Facebook friend / online friend">Facebook friend / online friend</option>
+          <option data-type="romantic" value="Friend with benefits">Friend with benefits</option>
+          <option data-type="family" value="Family member">Family member</option>
+          <option data-type="family" value="Family friend">Family friend</option>
+          <option data-type="family" data-gender="male" value="Father">Father</option>
+          <option data-type="family" data-gender="male" value="Father-in-law">Father-in-law</option>
+          <option data-type="social" value="Friend">Friend</option>
+          <option data-type="romantic" data-gender="female" value="Girlfriend">Girlfriend</option>
+          <option data-type="family" value="Grandchild">Grandchild</option>
+          <option data-type="family" value="Grandparent">Grandparent</option>
+          <option data-type="family" data-gender="female" value="Great-aunt">Great-aunt</option>
+          <option data-type="family" data-gender="male" value="Great-grandfather">Great-grandfather</option>
+          <option data-type="family" data-gender="female" value="Great-grandmother">Great-grandfather</option>
           <option data-type="family" value="great-grandchild">Great-grandchild</option>
-          <option data-type="family" data-gender="male" value="great-uncle">Great-uncle</option>
-          <option data-type="family" data-gender="male" value="grandfather">Grandfather</option>
-          <option data-type="family" data-gender="female" value="grandmother">Grandmother</option>
-          <option data-type="family" data-gender="male" value="half-brother">Half-Brother</option>
-          <option data-type="family" data-gender="female" value="half-brother">Half-Sister</option>
-          <option data-type="professional" value="handyman">Handyman / Handywoman</option>
-          <option data-type="romantic" data-gender="male" value="husband">Husband</option>
-          <option data-type="family" value="in-law">In-law relative</option>
-          <option data-type="romantic" value="involved">Involved / Entwined</option>
-          <option data-type="romantic" value="is-complicated">It's complicated</option>
-          <option data-type="professional" value="lawyer">Lawyer</option>
-          <option data-type="professional" value="lecturer">Lecturer</option>
-          <option data-type="romantic" value="lover">Lover</option>
-          <option data-type="family" data-gender="female" value="mother">Mother</option>
-          <option data-type="family" data-gender="female" value="mother-in-law">Mother-in-law</option>
-          <option data-type="professional" value="mentee">Mentee</option>
-          <option data-type="professional" value="mentor">Mentor</option>
-          <option data-type="family" data-gender="male" value="nephew">Nephew</option>
-          <option data-type="family" data-gender="female" value="niece">Niece</option>
-          <option data-type="unknown" value="other">Other</option>
+          <option data-type="family" data-gender="male" value="Great-uncle">Great-uncle</option>
+          <option data-type="family" data-gender="male" value="Grandfather">Grandfather</option>
+          <option data-type="family" data-gender="female" value="Grandmother">Grandmother</option>
+          <option data-type="family" data-gender="male" value="Half-brother">Half-Brother</option>
+          <option data-type="family" data-gender="female" value="Half-brother">Half-Sister</option>
+          <option data-type="professional" data-gender="male" value="Handyman">Handyman</option>
+          <option data-type="professional" data-gender="female" value="Handywoman">Handywoman</option>
+          <option data-type="romantic" data-gender="male" value="Husband">Husband</option>
+          <option data-type="family" value="In-law relative">In-law relative</option>
+          <option data-type="romantic" value="Involved">Involved / Entwined</option>
+          <option data-type="romantic" value="It's complicated">It's complicated</option>
+          <option data-type="professional" value="Lawyer">Lawyer</option>
+          <option data-type="professional" value="Lecturer">Lecturer</option>
+          <option data-type="romantic" value="Lover">Lover</option>
+          <option data-type="family" data-gender="female" value="Mother">Mother</option>
+          <option data-type="family" data-gender="female" value="Mother-in-law">Mother-in-law</option>
+          <option data-type="professional" value="Mentee">Mentee</option>
+          <option data-type="professional" value="Mentor">Mentor</option>
+          <option data-type="family" data-gender="male" value="Nephew">Nephew</option>
+          <option data-type="family" data-gender="female" value="Niece">Niece</option>
           <option data-type="professional" value="Plumber">Plumber</option>
-          <option data-type="family" value="parent">Parent</option>
-          <option data-type="professional" value="parent">Patient</option>
-          <option data-type="professional" value="professor">Professor</option>
-          <option data-type="romantic" value="partner">Partner</option>
-          <option data-type="family" value="relative">Relative</option>
-          <option data-type="professional" value="representative">Representative</option>
-          <option data-type="family" value="sibling">Sibling</option>
-          <option data-type="family" data-gender="female" value="sister">Sister</option>
-          <option data-type="family" data-gender="female" value="sister-in-law">Sister-in-law</option>
-          <option data-type="romantic" value="spouse">Spouse</option>    
-          <option data-type="social" value="support-buddy">Support Buddy</option>    
-          <option data-type="family" data-gender="male" value="son">Son</option>
-          <option data-type="family" data-gender="male" value="stepsister">Stepbrother</option>
-          <option data-type="family" data-gender="female" value="stepdaughter">Stepdaughter</option>
-          <option data-type="family" data-gender="male" value="stepfather">Stepfather</option>
-          <option data-type="family" data-gender="female" value="stepmother">Stepmother</option>
-          <option data-type="family" data-gender="female" value="stepsister">Stepsister</option>
-          <option data-type="family" data-gender="male" value="stepson">Stepson</option>
-          <option data-type="professional" value="student">Student</option>
-          <option data-type="professional" value="supervisee">Supervisee</option>
-          <option data-type="professional" value="supervisor">Supervisor</option>
-          <option data-type="professional" value="teacher">Teacher</option>
-          <option data-type="professional" value="team-leader">Team leader</option>
-          <option data-type="family" data-gender="male" value="uncle">Uncle</option>
-          <option data-type="romantic" value="unwanted-admirer">Unwanted Admirer</option>
-          <option data-type="romantic" data-gender="female" value="wife">Wife</option> 
+          <option data-type="family" value="Parent">Parent</option>
+          <option data-type="professional" value="Patient">Patient</option>
+          <option data-type="professional" value="Professor">Professor</option>
+          <option data-type="romantic" value="Partner">Partner</option>
+          <option data-type="family" value="Relative">Relative</option>
+          <option data-type="professional" value="Representative">Representative</option>
+          <option data-type="family" value="Sibling">Sibling</option>
+          <option data-type="family" data-gender="female" value="Sister">Sister</option>
+          <option data-type="family" data-gender="female" value="Sister-in-law">Sister-in-law</option>
+          <option data-type="romantic" value="Spouse">Spouse</option>    
+          <option data-type="social" value="Support buddy">Support buddy</option>    
+          <option data-type="family" data-gender="male" value="Son">Son</option>
+          <option data-type="family" data-gender="male" value="Stepbrother">Stepbrother</option>
+          <option data-type="family" data-gender="female" value="Stepdaughter">Stepdaughter</option>
+          <option data-type="family" data-gender="male" value="Stepfather">Stepfather</option>
+          <option data-type="family" data-gender="female" value="Stepmother">Stepmother</option>
+          <option data-type="family" data-gender="female" value="Stepsister">Stepsister</option>
+          <option data-type="family" data-gender="male" value="Stepson">Stepson</option>
+          <option data-type="professional" value="Student">Student</option>
+          <option data-type="professional" value="Supervisee">Supervisee</option>
+          <option data-type="professional" value="Supervisor">Supervisor</option>
+          <option data-type="professional" value="Teacher">Teacher</option>
+          <option data-type="professional" value="Team leader">Team leader</option>
+          <option data-type="family" data-gender="male" value="Uncle">Uncle</option>
+          <option data-type="romantic" value="Unwanted admirer">Unwanted admirer</option>
+          <option data-type="romantic" data-gender="female" value="Wife">Wife</option> 
       </datalist>
       </p>
       <p>
@@ -154,11 +154,53 @@
     </div>
   </div>
 </div>
-<div id="causes-modal" class="modal">
+<div id="causes-channel-modal" class="causes-modal modal">
   <div class="modal-content">
     <span class="close" data-modal="causes-modal">&times;</span>
     <div class="modal-body">
-      <p>Brands and Causes</p>
+      <h4>Add a channel you watch:</h4>
+      <label for="causes-channel-name">Add a channels or TV service you use: </label>
+      <input required list="causes-channel-options" name="causes-channel" type="text" placeholder="Enter channel or click to select from list..." value=""/>
+      <datalist id="causes-channel-options">
+            <option value="All 4">All 4</option>
+            <option value="Amazon Prime Video">Amazon Prime Video</option>
+            <option value="Apple TV">Apple TV</option>
+            <option value="Arrow Video">Arrow Video</option>
+            <option value="BBC iPlayer">BBC iPlayer</option>
+            <option value="BBC iPlayer Kids">BBC iPlayer Kids</option>
+            <option value="BFI Player">BFI Player</option>
+            <option value="BritBox">BritBox</option>
+            <option value="BT TV">BT TV</option>
+            <option value="Crunchyroll">Crunchyroll</option>
+            <option value="Curzon Home Cinema">Curzon Home Cinema</option>
+            <option value="Disney+">Disney+</option>
+            <option value="Freesat">Freesat</option>
+            <option value="Freeview">Freeview</option>
+            <option value="Google Play Movies">Google Play Movies</option>
+            <option value="hayu">HayU</option>
+            <option value="ITV Hub">ITV Hub</option>
+            <option value="MUBI">MUBI</option>
+            <option value="My5">My5</option>
+            <option value="Netflix">Netflix</option>
+            <option value="NOW TV">NOW TV</option>
+            <option value="Plusnet TV">Plusnet TV</option>
+            <option value="Pokemon TV">Pokemon TV</option>
+            <option value="S4C Clic">S4C Clic</option>
+            <option value="Shudder">Shudder</option>
+            <option value="Sky Go">Sky Go (Sky TV)</option>
+            <option value="STV Player">STV Player</option>
+            <option value="TalkTalk TV">TalkTalk TV</option>
+            <option value="TV Player">TV Player</option>
+            <option value="UKTV Play">UKTV Play</option>
+            <option value="Virgin Media">Virgin Media</option>
+            <option value="YouTube">YouTube</option>
+            <option value="YouTube Kids">YouTube Kids</option>
+            <option value="YouTube Movies">YouTube Movies</option>
+            <option value="YouView">YouView</option>
+      </datalist>
+      <p>
+        <button data-modal="causes-channel-modal" id="submit-causes-channel">Add</button>
+      </p>    
     </div>
   </div>
 </div>

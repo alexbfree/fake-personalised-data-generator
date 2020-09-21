@@ -17,10 +17,14 @@
     <span class="close" data-modal="person-modal">&times;</span>
     <div class="modal-body">
       <h4>Add a person in your life</h4>
+      <p>
       <label for="person-name">Name: </label>
       <input name="person-name" type="text" placeholder="e.g. Juliette Denham" value=""/>
-      <select required name="person-relationship" required>
-          <option value="" disabled selected hidden>Select relation to you...</option>
+      </p>
+      <p>
+      <label for="person-relationship">Relationship: </label>
+      <input required list="relationship-options" name="person-relationship" placeholder="Enter relationship or click to select from list..." style="width:22em;">
+      <datalist id="relationship-options">
           <option data-type="professional" value="accountant">Accountant</option>
           <option data-type="romantic" value="admirer">Admirer</option>
           <option data-type="professional" value="advisee">Advisee</option>
@@ -111,18 +115,25 @@
           <option data-type="family" data-gender="male" value="uncle">Uncle</option>
           <option data-type="romantic" value="unwanted-admirer">Unwanted Admirer</option>
           <option data-type="romantic" data-gender="female" value="wife">Wife</option> 
-      </select>
+      </datalist>
+      </p>
+      <p>
+      <label for="person-gender">Gender: </label>
       <select required name="person-gender" required>
           <option value="" disabled selected hidden>Select gender...</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="non-binary-other">Non-binary, unspecified or other</option>
       </select>
+      </p>
+      <p>
+      <label for="person-active">Active?</label>
       <select required name="person-active" required>
           <option value="" disabled selected hidden>Select if relationship is active...</option>
           <option value="past">Past relationship (e.g. estranged, ex, divorced, deceased, missing)</option>
           <option selected value="active">Current relationship</option>
       </select>
+      </p>
       <button data-modal="person-modal" id="submit-person">Add</button>                
     </div>
   </div>

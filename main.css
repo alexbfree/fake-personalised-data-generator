@@ -114,3 +114,7 @@ section {
     width:75% !important;
     padding:1%;
 }
+
+p {
+    margin:0 0 5px;
+}

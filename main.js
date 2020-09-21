@@ -121,11 +121,11 @@ window.addEventListener('load', function () {
         }
     }
 
-    let relationship_select = document.querySelector('select[name="person-relationship"]');
-    relationship_select.onchange = function(e) {
-        let gender = this.querySelector(':checked').getAttribute('data-gender');
-        if (gender) {
-            document.querySelector('select[name="person-gender"]').value=gender;
+    let relationship_select = document.querySelector('input[name="person-relationship"]');
+    relationship_select.oninput = function(e) {
+        let list_entry = document.querySelector(`datalist#relationship-options option[value="${e.target.value}"]`);
+        if (list_entry) {
+            document.querySelector('select[name="person-gender"]').value=list_entry.dataset.gender;
         } else {
             document.querySelector('select[name="person-gender"]').value="";
         }

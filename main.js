@@ -166,11 +166,28 @@ let compare_any_string = function (a, b) {
     return 0;
 }
 
+let generate_sample_occurrences = function() {
+
+}
+
 
 window.addEventListener('load', function () {
     let add_buttons = document.querySelectorAll(".add-button");
     let close_spans = document.getElementsByClassName("close");
     let modals = document.getElementsByClassName("modal");
+    let tab_links = document.querySelectorAll('.widget-tab-link');
+
+    [].forEach.call(tab_links, function (tab_link) {
+        tab_link.onclick = function (e) {
+            [].forEach.call(tab_links, function (tab_link) {
+                tab_link.parentNode.classList.remove('activated');
+            });
+            e.target.parentNode.classList.add('activated');
+            //console.log(window.location.hash);
+            e.preventDefault();
+            window.location.hash=`#${e.target.id}`;
+        }
+    });
 
     [].forEach.call(add_buttons, function (button) {
         button.onclick = function (e) {

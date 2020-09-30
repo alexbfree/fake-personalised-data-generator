@@ -213,6 +213,120 @@
   </div>
 </div>
 
+
+<hr/>
+
 ### Some Sample Data
 <button id='generate'>Generate Sample Data</button>
+
+<div class="widget">
+  <ul class="widget-list" id="activities">
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+        Activity #1 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+        Activity #2 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+        Activity #3 <span>detailgoeshere</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="widget-list" id="interactions">
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+        Interaction #1 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+        Interaction #2 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+        Interaction #3 <span>detailgoeshere</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="widget-list" id="transactions">
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Transaction #1 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Transaction #2 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Transaction #3 <span>detailgoeshere</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="widget-list" id="datasets">
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Dataset #1 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Dataset #2 <span>detailgoeshere</span>
+      </a>
+    </li>
+    <li>
+      <a class="widget-list-link">
+        <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+        Dataset #3 <span>detailgoeshere</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="widget-tabs">
+    <li class="widget-tab">
+      <a href="#datasets" id="datasets" class="widget-tab-link">Datasets</a>
+    </li>
+    <li class="widget-tab">
+      <a href="#transactions" id="transactions" class="widget-tab-link">Transactions</a>
+    </li>
+    <li class="widget-tab">
+      <a href="#interactions" id="interactions" class="widget-tab-link">Interactions</a>
+    </li>
+    <li class="widget-tab activated">
+      <a href="#activities" id="activities" class="widget-tab-link">Activities</a>
+    </li>
+  </ul>
+</div>
+
+<hr/>
+
 <script type="text/javascript" src="main.js"></script>
+
+
+
+<div id="sample-data-outer-container">
+
+
+</div>
